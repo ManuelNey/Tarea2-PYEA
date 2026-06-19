@@ -1,14 +1,5 @@
 # Turismo Emisivo — Probabilidad y Estadística Aplicada
 
-Tarea 2 de Probabilidad y Estadística Aplicada. Análisis estadístico sobre datos
-de Turismo Emisivo del catálogo de datos abiertos del gobierno uruguayo.
-
-## Integrantes
-- [Nombre 1] - CI
-- [Nombre 2] - CI
-- [Nombre 3] - CI
-- [Nombre 4] - CI
-
 ## Estructura del proyecto
 
 ```
