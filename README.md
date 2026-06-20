@@ -9,6 +9,8 @@ PYA/
 │   └── muestra_2000_datos.csv          # muestra de 2000 filas (USAR ESTA de acá en más)
 ├── prueba_Parte_1/
 │   └── parte1.py                       # script de muestreo (Parte 1)
+├── Parte_2/
+│   └── parte2.py                       # script de análisis descriptivo (Parte 2)
 └── README.md
 ```
 
