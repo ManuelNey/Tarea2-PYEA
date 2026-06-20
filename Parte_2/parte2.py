@@ -1,6 +1,12 @@
 
 import pandas as pd
-
+import matplotlib.pyplot as plt
+from parte2_descriptiva import (
+    tabla_frecuencias_intervalos,
+    histograma_gasto,
+    boxplot_gasto,
+    diagrama_dispersion
+)
 # Paso 1: Carga del dataset de la muestra exportada en la Parte 1
 lectura = pd.read_csv('./muestra_2000_datos.csv')
 
@@ -34,3 +40,44 @@ plt.title('Distribución de Destinos') # Título del gráfico
 plt.axis('equal') # Aseguramos que el gráfico circular sea un círculo perfecto
 plt.show() # Mostramos el gráfico circular
 
+
+
+# Ejercicio 4: Tabla de frecuencias por intervalos para una variable de gasto
+
+# Se selecciona GastoAlojamiento porque representa un componente relevante
+# del gasto turístico y se reutiliza en los ejercicios 5 y 6.
+variable_gasto = "GastoAlojamiento"
+
+tabla_alojamiento = tabla_frecuencias_intervalos(
+    lectura,
+    variable_gasto,
+    bins=10
+)
+
+print(tabla_alojamiento)
+
+
+# Ejercicio 5: Histograma para la variable de gasto seleccionada
+
+histograma_gasto(
+    lectura,
+    variable_gasto,
+    bins=10
+)
+
+# Ejercicio 6: Diagrama de cajas para la variable de gasto seleccionada
+
+resumen_boxplot = boxplot_gasto(
+    lectura,
+    variable_gasto
+)
+
+print(resumen_boxplot)
+
+# Ejercicio 7: Diagrama de dispersión entre Gente y GastoTotal
+
+diagrama_dispersion(
+    lectura,
+    "Gente",
+    "GastoTotal"
+)
